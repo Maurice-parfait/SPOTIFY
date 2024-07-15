@@ -2,8 +2,16 @@
 module.exports = {
   content: ["./index.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily :{
+        poppins : "Poppins"
+      },
+
+      gridTemplateColumns :{
+        mains: "1.3fr 5fr"
+      }
+    },
   },
-  plugins: [],
+  plugins: [ require ( 'tailwind-scrollbar' )],
 }
 

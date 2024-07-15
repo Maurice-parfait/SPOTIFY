@@ -5,9 +5,749 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPOTIFY</title>
     <link rel="stylesheet" href="src/output.css">
+    <!-- le liens des icones -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- npx tailwindcss -i ./CSS/Style.css -o ./src/output.css --watch -->
 </head>
 <body class="m-0 p-0 box-border">
+    <main class="bg-black min-h-screen w-full font-poppins p-2">
+
+        <div class="grid grid-cols-mains gap-2">
+                <!-- les grid 1.7fr et 5fr -->
+            <div class="h-[95vh]">
+
+                <div class="bg-[#1A1A1A] px-4 py-4 rounded-xl mb-2">
+
+                    <div class="flex items-center text-slate-50 mb-4">
+                        <i class='bx bxl-spotify text-4xl'></i>
+                        <h2 class="text-lg">Spotify</h2>
+                    </div>
+                           <!--   097 7014300    -->
+                    <div class="flex items-center text-gray-300 mb-5 hover:text-white">
+                        <a href="#" class="text-2xl"> 
+                            <i class='bx bx-home'></i>
+                        </a>
+
+                        <a href="#" class="ml-4 text-md">
+                            <h2>Acceuil</h2>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center text-gray-300 hover:text-white">
+                        <a href="#" class="text-2xl">
+                            <i class='bx bx-search'></i>
+                        </a>
+
+                        <a href="#" class="ml-4 text-md">
+                            <h2>Rechercher</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- deuxieme partie 1.7fr -->
+
+                <div class="px-4 py-2 bg-[#1A1A1A] rounded-lg">
+
+                    <div class="flex items-center text-gray-300 mb-4">
+                        <div class="flex items-center hover:text-white">
+                            <div class="">
+                                <a href="#" class="text-2xl">
+                                    <i class='bx bx-layer'></i>
+                                </a>
+                            </div>
     
+                            <div class="flex">
+                                <a href="#" class="ml-10">
+                                    <h2>Bibliotheque</h2>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end w-full text-3xl">
+                            <a href="#" class=" hover:rounded-full hover:bg-gray-500 hover:text-white">
+                                <i class='bx bx-plus'></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="p-4 bg-[#3A3A3A] text-white rounded-t-xl mb-8">
+                        <h1 class="font-bold">Créez votre premiere playlist</h1>
+                        <p>c'est simple, nous allons vous aider</p>
+                    </div>
+
+                    <div class=" text-slate-300">
+                        <div class=" text-xs font-light">
+                            <div class="py-2">
+                                <a href="#">Légal</a>
+                                <a href="#" class="ml-4">Centre de sécurité et de confidentialité</a>
+                            </div>
+
+                            <div class="py-2">
+                                <a href="#">Protection des données</a>
+                                <a href="#" class="ml-10">cookies</a>
+                            </div>
+
+                            <div class="py-2">
+                                <a href="#">A propos des pubs </a>
+                                <a href="#" class="ml-4">Accessibilité</a>
+                            </div> 
+
+                            <div class="py-2">
+                                <a href="#">cookies</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-4 ml-8">
+                        <a href="#" class="border p-2 rounded-full text-slate-50 font-bold text-lg">
+                            <i class='bx bx-globe'></i>
+                            Français
+                        </a>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+<!-- ********************************* la partie de 5fr *************************************8 -->
+
+            <div class="bg-[#0C0C0C] rounded-lg h-[95vh]">
+
+                <!-- la nav bar -->
+                <div class="bg-[#0C0C0C] px-4 py-2 flex items-center rounded-xl">
+                    <div class="flex">
+                        <a href="#" class="px-1 py-0 text-white rounded-full bg-black mr-2">
+                            <i class='bx bx-chevron-left  text-3xl font-bold'></i>
+                        </a>
+                        <a href="#" class="px-1 py-0 text-white rounded-full bg-black">
+                            <i class='bx bx-chevron-right text-3xl font-bold'></i>
+                        </a>
+                    </div>
+
+                    <ul class="flex items-center justify-end w-full">
+                        <li class="text-gray-300 font-bold mr-4">
+                            <a href="#">S'inscrire</a>
+                        </li>
+
+                        <li class="px-6 py-4 bg-white rounded-full font-bold">
+                            <a href="#">Se connecter</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- le contenu avec scrollbarr -->
+                <div class="bg-[#1A1A1A] h-[84vh] rounded-b-xl overflow-y-scroll scrollbar scrollbar-thumb-gray-600">
+                    <div class="px-4 mt-8 ">
+
+                        <div class="flex items-center mb-2">
+    
+                            <div class="w-1/2 text-slate-50 font-bold text-2xl">
+                                <a href="#" class="hover:underline">
+                                    Artistes populaires
+                                </a>
+                            </div>
+    
+                            <div class="flex justify-end w-full text-gray-400">
+                                <a href="#">Tout afficher</a>
+                            </div>
+                        </div>
+    
+                        <div class="flex items-center justify-between">
+                            <!-- les cards -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-1 ">
+                                <img class="h-36 w-36 rounded-full" src="img/fally .jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-bold pt-4">Fally Ipupa</h1>
+                                <h2 class="text-xl text-gray-400">Artiste</h2>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-1 ">
+                                <img class="h-36 w-36 rounded-full" src="img/dadju spo.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-bold pt-4">Dadju</h1>
+                                <h2 class="text-xl text-gray-400">Artiste</h2>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-1 ">
+                                <img class="h-36 w-36 rounded-full" src="img/Tayc spo.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-bold pt-4">Tayc</h1>
+                                <h2 class="text-xl text-gray-400">Artiste</h2>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-1 ">
+                                <img class="h-36 w-36 rounded-full" src="img/Fond d'écran Ninho -NI cover.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-bold pt-4">Nihno</h1>
+                                <h2 class="text-xl text-gray-400">Artiste</h2>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-1 ">
+                                <img class="h-36 w-36 rounded-full" src="img/Faveur spo.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-bold pt-4">Faveur Mukoko</h1>
+                                <h2 class="text-xl text-gray-400">Artiste</h2>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg ">
+                                <img class="h-36 w-36 rounded-full" src="img/Kablack spo.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-bold pt-4">keBlack</h1>
+                                <h2 class="text-xl text-gray-400">Artiste</h2>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+    
+                    </div>
+    
+                    <div class=" p-4 mt-8">
+                        <div class="flex items-center mb-2">
+    
+                            <div class="w-1/2 text-slate-50 font-bold text-2xl">
+                                <a href="#" class="hover:underline">
+                                    Albums populaires
+                                </a>
+                            </div>
+    
+                            <div class="flex justify-end w-full text-gray-400">
+                                <a href="#" class="hover:underline">Tout afficher</a>
+                            </div>
+                        </div>
+    
+    
+                        
+                        <!--  la partie des albums populairee -->
+    
+    
+    
+                        <div class="flex items-center justify-between">
+    
+                            <!-- les cards chanson 2 -->
+    
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-1 ">
+                                <img class="h-44 w-48 rounded-lg" src="img/albums/Fally Lpupa.jpeg" alt="">
+                                <h1 class="text-slate-50 text-sm font-semibold pt-4">Formule 7</h1>
+                                
+                                <a href="#" class="text-md text-gray-400 mt-4 hover:underline"> Fally Ipupa</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!-- faveur mukoko -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-1 ">
+                                <img class="h-44 w-48 rounded-lg" src="img/albums/faveur.jpg" alt="">
+                                <h1 class="text-slate-50 text-sm font-semibold pt-4">Hakuniacha</h1>
+                              
+                                <a href="#" class="text-md text-gray-400 mt-4 hover:underline"> Faveur Mukoko</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!-- 1 Heure avec jesus -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-1 ">
+                                <img class="h-44 w-48 rounded-lg" src="img/albums/1_heure.jpg" alt="">
+                                <h1 class="text-slate-50 text-sm font-semibold pt-4">1 Heure avec Jesus</h1>
+                            
+                                <a href="#" class="text-md text-gray-400 mt-4 hover:underline">Adorons l'eternel..</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!-- heritage -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-1 ">
+                                <img class="h-44 w-48 rounded-lg" src="img/albums/heritage.jpeg" alt="">
+                                <h1 class="text-slate-50 text-sm font-semibold pt-4">HERITAGE</h1>
+                                
+                                <a href="#" class="text-md text-gray-400 mt-4 hover:underline"> Dadju & Tayc</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!-- le culte -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-1 ">
+                                <img class="h-44 w-48 rounded-lg" src="img/albums/le culte.jpeg" alt="">
+                                <h1 class="text-slate-50 text-sm font-semibold pt-4">Le Culte</h1>
+                                
+                                <a href="#" class="text-md text-gray-400 mt-4 hover:underline"> Athoms nadege</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- 1er amour -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg">
+                                <img class="h-44 w-48 rounded-lg" src="img/albums/1er amour.jpeg" alt="">
+                                <h1 class="text-slate-50 text-sm font-semibold pt-4">1er amour</h1>
+
+                                <a href="#" class="text-md text-gray-400 mt-4 hover:underline"> Morijah</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- la partie de Radio populaire -->
+
+                    <div class="p-4 mt-4">
+                        
+                        <div class="flex items-center mb-2">
+    
+                            <div class="w-1/2 text-slate-50 font-bold text-2xl">
+                                <a href="#" class="hover:underline">Radio populaire</a>
+                            </div>
+    
+                            <div class="flex justify-end w-full text-gray-400 ml-28">
+                                <a href="#" class="hover:underline">Tout afficher</a>
+                            </div>
+                        </div>
+
+
+                        <div class="flex  justify-between">
+    
+                            <!-- les cards de redio -->
+                            
+                            <!-- moise mbiye -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-1 ">
+                                <img class="h-40 w-72 rounded-lg" src="img/radio/radio moise.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-semibold  pt-4">Moise Mbiye..</h1>
+                                
+                                <a href="#" class="text-sm text-gray-400 mt-4 hover:underline"> Avec Mike-kalambayi</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!-- radio fally ipupa -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-1 ">
+                                <img class="h-40 w-72 rounded-lg" src="img/radio/radio fally.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-semibold pt-4">Fally Ipupa</h1>
+                              
+                                <a href="#" class="text-sm text-gray-400 mt-4 hover:underline"> Avec Kofi olonide, <br> Ferre Gola, Innoss'b</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!-- radio gaz mawete -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-1 ">
+                                <img class="h-40 w-72 rounded-lg" src="img/radio/radio mawete.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-semibold pt-4">Inspirée p..</h1>
+                            
+                                <a href="#" class="text-sm text-gray-400 mt-4 hover:underline">Avec Rebo, Gally, GAZ FABULOUS..</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!--radio emmanuel -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-1 ">
+                                <img class="h-40 w-72 rounded-lg" src="img/radio/radio emmanuel.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-semibold pt-4">Emmanuel...</h1>
+                                
+                                <a href="#" class="text-sm text-gray-400 mt-4 hover:underline"> Avec Eunice Manyange ...</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!--Radio omah -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-1 ">
+                                <img class="h-40 w-72 rounded-lg" src="img/radio/radio omah.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-semibold pt-4">Omah lay</h1>
+                                
+                                <a href="#" class="text-sm text-gray-400 mt-4 hover:underline">Avec Victony, Joeboy, Bella,..</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Radio Lucky-->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg ">
+                                <img class="h-40 w-72 rounded-lg" src="img/radio/radio lucky.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-semibold pt-4">Luchy Dube</h1>
+
+                                <a href="#" class="text-sm text-gray-400 mt-4 hover:underline"> Avec Culture, Brenda Fassie, Alp.. </a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+    
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- la partie de classements recommanders -->
+
+                    <div class="p-4 mt-4">
+                        <div class="mb-2">
+
+                            <div class="w-1/2 text-slate-50 font-bold text-2xl">
+                                <a href="#" class="hover:underline">Classements recommandés</a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="flex  justify-between">
+    
+                            <!-- les cards de classements recommanders -->
+                            
+                            <!-- top titre monde -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-2 ">
+                                <img class="h-40 w-72 rounded-lg" src="img/classement/top titre monde.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-semibold  pt-4">Top Titre:..</h1>
+                                
+                                <a href="#" class="text-sm text-gray-400 mt-4 hover:underline"> Monde: Votre point hebdomadaire</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!-- top titre usa -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-2 ">
+                                <img class="h-40 w-72 rounded-lg" src="img/classement/usa.jpg" alt="">
+                                <h1 class="text-slate-50 text-lg font-semibold pt-4">Top Titre:Etats..</h1>
+                              
+                                <a href="#" class="text-sm text-gray-400 mt-4 hover:underline">Etats-Unis:votre point,hebdomadaire</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!-- top 50 global-->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-2 ">
+                                <img class="h-40 w-72 rounded-lg" src="img/classement/global 50.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-semibold pt-4">Top 50: Monde</h1>
+                            
+                                <a href="#" class="text-sm text-gray-400 mt-4 hover:underline">Monde: Votre point hebdomadaire</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!--top 50 usa -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-2 ">
+                                <img class="h-40 w-72 rounded-lg" src="img/classement/top 50 usa.jpg" alt="">
+                                <h1 class="text-slate-50 text-lg font-semibold pt-4">Top 50:Etat...</h1>
+                                
+                                <a href="#" class="text-sm text-gray-400 mt-4 hover:underline"> Etats: Votre point hebdomadaire</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!--viral 50-->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-2 ">
+                                <img class="h-40 w-72 rounded-lg" src="img/classement/viral 50 .jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-semibold pt-4">Viral 50:Monde</h1>
+                                
+                                <a href="#" class="text-sm text-gray-400 mt-4 hover:underline">Monde: Votre point hebdomadaire</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- viral 50 usa-->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg">
+                                <img class="h-40 w-72 rounded-lg" src="img/classement/viral 50 usa.jpg" alt="">
+                                <h1 class="text-slate-50 text-lg font-semibold pt-4">Viral 50:Monde</h1>
+
+                                <a href="#" class="text-sm text-gray-400 mt-4 hover:underline"> Etats: Votre point hebdomadaire</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+    
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- la partie de Playlists spotify -->
+
+                    <div class="p-4 mt-4">
+                        <div class="flex items-center mb-2">
+    
+                            <div class="w-1/2 text-slate-50 font-bold text-2xl">
+                                <a href="#" class="hover:underline">
+                                    Playlists Spotify
+                                </a>
+                            </div>
+    
+                            <div class="flex justify-end w-full text-gray-400">
+                                <a href="#" class="hover:underline">Tout afficher</a>
+                            </div>
+                        </div>
+
+                        <div class="flex  justify-between">
+    
+                            <!-- les cards de Playlists spotify -->
+                            
+                            <!-- 1 cards -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-2 ">
+                                <img class="h-40 w-72 rounded-lg" src="img/playslidt/1 card.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-semibold  pt-4">Workday ...</h1>
+                                
+                                <a href="#" class="text-sm text-gray-400 mt-4 hover:underline"> Chill out to the</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!--2 cards -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-2 ">
+                                <img class="h-40 w-72 rounded-lg" src="img/playslidt/all out.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-semibold pt-4">All Out</h1>
+                              
+                                <a href="#" class="text-sm text-gray-400 mt-4">who's now and next</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!-- 3 cards -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-2 ">
+                                <img class="h-40 w-72 rounded-lg" src="img/playslidt/3 cards.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-semibold pt-4">Jazz</h1>
+                            
+                                <a href="#" class="text-sm text-gray-400 mt-4">Soothing piano and...</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!--4 cards  -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-2 ">
+                                <img class="h-40 w-72 rounded-lg" src="img/playslidt/4 cards.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-semibold pt-4">Lofi Breats</h1>
+                                
+                                <a href="#" class="text-sm text-gray-400 mt-4 "> Chill beats, lofi vides</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!--  5 cards -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg mr-2 ">
+                                <img class="h-40 w-72 rounded-lg" src="img/playslidt/5 cards.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-semibold pt-4">Deep Focus</h1>
+                                
+                                <a href="#" class="text-sm text-gray-400 mt-4 ">Rock never dies. feel.</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- 6 cards -->
+                            <div class="relative group p-2 hover:bg-[#2A2A2A] hover:rounded-lg">
+                                <img class="h-40 w-72 rounded-lg" src="img/playslidt/6 cards.jpeg" alt="">
+                                <h1 class="text-slate-50 text-lg font-semibold pt-4">Today's Top</h1>
+    
+                                <a href="#" class="text-sm text-gray-400 mt-4"> Karol G is on top of</a>
+    
+                                <div class="absolute inset-y-0 right-2 top-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href="#" class="px-1 py-0.5 bg-green-500 rounded-full ">
+                                        <i class='bx bx-play text-5xl'></i>
+                                    </a>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+
+
+                    <!-- le footer -->
+
+                    <footer class="px-6 mt-10">
+                        <div class="flex justify-between pb-10">
+
+                            <div class="text-gray-300 ">
+                                <h2 class="text-white text-xl font-semibold mb-2">Société</h2>
+                                <a href="#" class="hover:text-white hover:underline"> A propos</a> <br>
+                                <a href="#" class="hover:text-white hover:underline"> Offres d'emploi</a> <br>
+                                <a href="#" class="hover:text-white hover:underline"> For the Record</a> <br>
+                            </div>
+
+                            <div class="text-gray-300">
+                                <h2 class="text-white text-xl font-semibold mb-2">Communautés</h2>
+                                <a href="#" class="hover:text-white hover:underline"> Espace artiste</a> <br>
+                                <a href="#" class="hover:text-white hover:underline"> Développeurs</a> <br>
+                                <a href="#" class="hover:text-white hover:underline"> Campagnes</a> <br>
+                                <a href="#" class="hover:text-white hover:underline"> Publicitaires</a> <br>
+                                <a href="#" class="hover:text-white hover:underline"> Investisseurs</a> <br>
+                                <a href="#" class="hover:text-white hover:underline"> Fournisseurs</a> <br>
+
+                            </div>
+
+                            <div class="text-gray-300">
+                                <h2 class="text-white text-xl font-semibold mb-2">Liens Utiles</h2>
+                                <a href="#" class="hover:text-white hover:underline"> Assistance</a> <br>
+                                <a href="#" class="hover:text-white hover:underline"> Appli Mobile Gratuite</a> <br>
+
+                            </div>
+
+                            <div class="text-gray-300">
+                                <h2 class="text-white text-xl font-semibold mb-2">Abonnements Spotify</h2>
+                                <a href="#" class="hover:text-white hover:underline"> Premium Personnel</a> <br>
+                                <a href="#" class="hover:text-white hover:underline"> Premium Duo</a> <br>
+                                <a href="#" class="hover:text-white hover:underline"> Premium Famille</a> <br>
+                                <a href="#" class="hover:text-white hover:underline"> Spotify Free</a> <br>
+
+                            </div>
+
+                            <div class="text-gray-300 flex">
+
+                                <div class="m-2">
+                                    <a href="#" class="hover:text-white hover:bg-gray-400 px-3 pt-3 pb-1.5 rounded-full bg-gray-600"> 
+                                        <i class='text-2xl text-white bx bxl-instagram'></i>
+                                    </a> 
+                                </div>
+
+                                <div class="m-2">
+                                    <a href="#" class="hover:text-white hover:bg-gray-400 px-3 pt-3 pb-1.5 rounded-full bg-gray-600">
+                                        <i class='text-2xl text-white bx bxl-twitter'></i>
+                                    </a> 
+                                </div>
+
+                                <div class="m-2">
+                                    <a href="#" class="hover:text-white hover:bg-gray-400 px-3 pt-3 pb-1.5 rounded-full bg-gray-600"> 
+                                        <i class='text-2xl text-white bx bxl-facebook-circle'></i>
+                                    </a>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                        <hr>
+                    </footer>
+
+
+                    <div class="p-8 mt-4 text-gray-300">
+                        <p>© 2024 Maurice  M</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+        
+    </main>
+
 </body>
 </html>
